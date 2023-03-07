@@ -4,6 +4,10 @@ import Dashboard from "./components/Dashboard";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 
+import Home from "./components/Home";
+import Team from "./components/Team";
+
+
 function App() {
   return (
     <>
@@ -19,6 +23,11 @@ function App() {
         <Switch>
           <Route path="/login">
             <Login />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/team">
+            <Team />
           </Route>
         </Switch>
 
